@@ -36,6 +36,12 @@ st.line_chart(filtered_data["total_funding_usd"])
 # industry = st.sidebar.selectbox('Industry', industry_options)
 headquarters_options = sorted(data['headquarters'].astype(str).unique())
 headquarters = st.sidebar.selectbox('Headquarters', headquarters_options)
+fil_data_country = data[data['headquarters'] == headquarters]
+
+st.subheader(f"💰 Funding in {headquarters}")
+st.metric("Median Funding", f"${fil_data_country['total_funding_usd'].median():,.0f}")
+st.bar_chart(fil_data_country["total_funding_usd"])
+
 founded_year = st.sidebar.number_input('Founded Year', min_value=2000, max_value=2025, step=1)
 funding_amount = st.sidebar.number_input('Total Funding (USD)', min_value=0.0, step=100000.0)
 num_rounds = st.sidebar.slider('Number of Funding Rounds', min_value=0, max_value=15, step=1)
