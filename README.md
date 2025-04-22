@@ -30,8 +30,6 @@ Startups are inherently risky. This project builds a **Startup Success Classifie
 │   └── startup_data.csv         # Dataset used for training
 ├── requirements.txt             # Required Python packages
 ├── README.md                    # You’re here!
-└── assets/
-    └── demo.mp4                 # (Optional) Demo screen recording
 ```
 
 ---
