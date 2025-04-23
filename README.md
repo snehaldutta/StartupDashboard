@@ -1,6 +1,6 @@
 # 📊 Startup Success Prediction Dashboard
 
-A Streamlit-based web application that predicts the success probability of a startup using machine learning. Users can input startup-related features and receive a success/failure prediction along with confidence and insights about industry funding trends.
+A Streamlit-based web application that predicts the success probability of a startup using machine learning. Users can input startup-related features and receive success/failure predictions and insights about industry funding trends.
 
 ---
 
